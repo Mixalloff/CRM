@@ -2,22 +2,17 @@ var Day = React.createClass({
 
 	getInitialState: function(){
 		return({
-				number:11,
-				month: "Июль",
-				quantity_rings: 1,
-				quantity_meetings: 2}
-	)},
-
-	componentDidMount: function() { // kogda otrisovalsa component
-	
+			quantity_rings: this.props.quantity_rings,
+			quantity_meetings: this.props.quantity_meetings
+		});
 	},
 
 	render: function() {
 		return(
 			<div className="col-md-3">
 				<div className="day">
-					<p className="number">{this.state.number}</p>
-					<p className="month">{this.state.month}</p>
+					<p className="number">{this.props.number}</p>
+					<p className="month">{this.props.month}</p>
 					<div className="meeting_info">
 						<p className="ring"> Звонок клиенту <span className="quantity">{this.state.quantity_rings}</span></p>  
 						<p className="meet"> Встреча <span className="quantity">{this.state.quantity_meetings}</span></p>
@@ -29,26 +24,48 @@ var Day = React.createClass({
 });	
 
 var Calendar = React.createClass({
-	render: function () {
-		return (
+	getInitialState: function() {
+		return({days: [] });
+	},
+	updateCalendar: function() {
+		alert("update");
+		var self = this;
+		$.ajax ({
+			type: "GET",
+			url: self.props.source,
+			success: function(response) {
+				alert("success");
+				self.setState({
+					days: response
+				});
+				self.updateCalendar();
+			},
+			error: function() {
+				alert("error");
+				self.updateCalendar();
+			}
+
+		});
+	},
+	componentDidMount: function() {
+		alert("component");
+		this.updateCalendar();
+	},
+	render: function () {		
+		alert("render");
+			var calendarDays = this.state.days.map(function(day)
+			{
+				alert(day.quantity_rings);
+				return(
+				<Day number={day.number} month = {day.month} quantity_rings={day.quantity_rings} quantity_meetings={day.quantity_meetings}/>
+				);
+			});
+				return (
 				<div>
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
-					<Day />
+					{calendarDays}
 				</div>
-			)
+					);	
 	}
-
-
 });
 
-React.render(<Calendar />, document.getElementById('calendars'));
+React.render(<Calendar source = "http://crmapi-tommsawyer.rhcloud.com/longpolling" />, document.getElementById('calendars'));
