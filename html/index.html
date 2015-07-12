@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CRM</title>
+	    	
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/> 
+	<link rel="stylesheet" href="style/menu.css"/> 
+	<link rel="stylesheet" href="style/body.css"/>
+	<link rel="stylesheet" href="style/deals.css"/>
+	<link rel="stylesheet" href="style/events.css"/>
+	<link rel="stylesheet" href="style/jPane.css">
+	<script type="text/javascript" src="jQuery/jquery-2.1.4.min.js" ></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"> </script>
+	<script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+	
+	
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="row" id="header">
+		<div class="navbar">
+			<ul class="nav navbar-nav col-md-12">
+				<li class="active col-md-2"><a href="#"><img src="images/desktop.png"/>Рабочий стол</a></li>
+				<li class="col-md-2"> <a href="#dealings"><img src="images/dealings.png"/>Сделки</a></li>
+				<li class="col-md-2"> <a href="#contacts"><img src="images/contacts.png"/>Контакты</a></li>
+				<li class="col-md-2"> <a href="#calendar"><img src="images/calendar.png"/>Календарь</a></li>
+				<li class="col-md-2"> <a  href="#analytics"><img src="images/analytics.png"/>Аналитика</a></li>
+				<li class="col-md-2 avatar">
+				<div class="row">
+						
+						<span class="glyphicon glyphicon-off"> </span>
+					<div class="profile col-md-6">
+					<a href="#downloadprofile">
+						<span class="glyphicon glyphicon-envelope"> </span>
+						<span class="glyphicon glyphicon-time"> </span>
+						<img src="images/emptyavatar.jpg">	
+					</a> 
+					</div>	
+
+					<div class="info col-md-6">		
+							<div class="name"> Иванов Иван </div> 
+							<div class= "position"> Менеджер </div>		
+					</div>	
+				</div>
+
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="row main">
+
+			<div class="mainpart col-md-9">
+			<h3>Календарь</h3>
+
+			<div class="row" id="scrollBox">	
+				<div class ="col-md-12" id="calendars">
+				
+				</div>
+			</div>
+
+<h3>События</h3>
+			<div class="row events">
+				
+					<div class="col-md-12" id="events">
+					</div>
+			</div>
+			</div>
+
+				<div class="leftbar col-md-3">
+					<div class="row deals">
+					<span class="glyphicon glyphicon-cog"> </span>
+						<h3>Мои сделки</h3>
+						<div class="col-md-12" id="deals">	
+						</div>
+					</div>
+				</div>
+	</div>
+	</div>
+<!--<script type="text/jsx" src="reactClasses/day.js"> </script>-->
+<script src = "jQuery/jScrollPane.js"> </script>
+<script src = "jQuery/jsMouseWheel.js"> </script>
+<!--<script src = "jQuery/myScript.js"></script>-->
+<script src = "reactClasses/day_compiled.js"> </script>
+<script src = "reactClasses/event_compiled.js"> </script>
+<script src = "reactClasses/deal_compiled.js"> </script>
+
+</body>
+</html>
