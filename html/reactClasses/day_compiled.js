@@ -21,14 +21,12 @@ var Calendar = React.createClass({displayName: "Calendar",
 		return({days: [] });
 	},
 	updateCalendar: function() {
-		alert("update");
 		$.ajax ({
 			type: "GET",
 			url: this.props.source,
 			dataType: 'json',
 			cache: false,
 			success: function(response) {
-				alert("success");
 				console.log(this.state.days);
 				this.replaceState({
 					days: response
@@ -36,18 +34,15 @@ var Calendar = React.createClass({displayName: "Calendar",
 				this.updateCalendar();
 			}.bind(this),
 			error: function() {
-				alert("error");
 				this.updateCalendar();
 			}.bind(this)
 
 		});
 	},
 	componentDidMount: function() {
-		alert("component");
 		this.updateCalendar();
 	},
 	render: function () {		
-		alert("render");
 		return (
 				React.createElement("div", null, 
 				this.state.days.map(function(day,i)

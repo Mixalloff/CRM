@@ -10,7 +10,7 @@ getInitialState: function() {
 	})
 },
 
-render:function() {
+	render:function() {
 	return(
 	<div className="deal">
 			<p className = "companyname"> {this.state.companyname} </p>
