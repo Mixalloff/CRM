@@ -1,12 +1,5 @@
 var Day = React.createClass({
 
-	getInitialState: function(){
-		return({
-			quantity_rings: this.props.quantity_rings,
-			quantity_meetings: this.props.quantity_meetings
-		});
-	},
-
 	render: function() {
 		return(
 			<div className="col-md-3">
@@ -14,8 +7,8 @@ var Day = React.createClass({
 					<p className="number">{this.props.number}</p>
 					<p className="month">{this.props.month}</p>
 					<div className="meeting_info">
-						<p className="ring"> Звонок клиенту <span className="quantity">{this.state.quantity_rings}</span></p>  
-						<p className="meet"> Встреча <span className="quantity">{this.state.quantity_meetings}</span></p>
+						<p className="ring"> Звонок клиенту <span className="quantity">{this.props.quantity_rings}</span></p>  
+						<p className="meet"> Встреча <span className="quantity">{this.props.quantity_meetings}</span></p>
 					</div>
 				</div>
 			</div>
@@ -28,43 +21,38 @@ var Calendar = React.createClass({
 		return({days: [] });
 	},
 	updateCalendar: function() {
-		alert("update");
-		var self = this;
 		$.ajax ({
 			type: "GET",
-			url: self.props.source,
+			url: this.props.source,
+			dataType: 'json',
+			cache: false,
 			success: function(response) {
-				alert("success");
-				self.setState({
+				console.log(this.state.days);
+				this.replaceState({
 					days: response
 				});
-				self.updateCalendar();
-			},
+				this.updateCalendar();
+			}.bind(this),
 			error: function() {
-				alert("error");
-				self.updateCalendar();
-			}
+				this.updateCalendar();
+			}.bind(this)
 
 		});
 	},
 	componentDidMount: function() {
-		alert("component");
 		this.updateCalendar();
 	},
 	render: function () {		
-		alert("render");
-			var calendarDays = this.state.days.map(function(day)
-			{
-				alert(day.quantity_rings);
-				return(
-				<Day number={day.number} month = {day.month} quantity_rings={day.quantity_rings} quantity_meetings={day.quantity_meetings}/>
-				);
-			});
-				return (
+		return (
 				<div>
-					{calendarDays}
+				{this.state.days.map(function(day,i)
+					{
+				return(
+				<Day key={i} number={day.number} month = {day.month} quantity_rings={day.quantity_rings} quantity_meetings={day.quantity_meetings}/>
+					  );
+				})}
 				</div>
-					);	
+			 );	
 	}
 });
 
