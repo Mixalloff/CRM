@@ -10,9 +10,9 @@ getInitialState: function() {
 	})
 },
 
-render:function() {
+	render:function() {
 	return(
-	React.createElement("div", {className: "deal"}, 
+	React.createElement("div", {className: "deal "}, 
 			React.createElement("p", {className: "companyname"}, " ", this.state.companyname, " "), 
 			React.createElement("p", {className: "dealname"}, this.state.dealname), 
 			React.createElement("p", {className: "nextaction"}, " Следующее действие: ", this.state.nextaction, " "), 
@@ -25,7 +25,8 @@ render:function() {
 var Deals = React.createClass({displayName: "Deals",
 	render: function () {
 		return (
-				React.createElement("div", null, 
+			React.createElement("div", null, 
+				React.createElement("div", {className: "carousel", "data-count": "4"}, 
 					React.createElement(Deal, null), 
 					React.createElement(Deal, null), 
 					React.createElement(Deal, null), 
@@ -33,9 +34,11 @@ var Deals = React.createClass({displayName: "Deals",
 					React.createElement(Deal, null), 
 					React.createElement(Deal, null), 
 					React.createElement(Deal, null)
+					)
 				)
 			)
 	}
 });
-
-React.render(React.createElement(Deals, null), document.getElementById('deals'));
+React.render(React.createElement(Deals, null),document.getElementById("deal-steps"),function() {
+	React.render(React.createElement(Deals, null),document.getElementById("deals"));
+});

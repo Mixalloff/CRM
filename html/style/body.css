@@ -6,19 +6,9 @@
 	margin-bottom: 20px;
 }
 
-#calendars .col-md-3 {
-	display: inline-block;
-	float:none;
-}
+
 #scrollBox {
 	margin-bottom: 20px;
-}
-
-#calendars {
-	white-space: nowrap;
-	height: 215px;
-	width:100%;
-	overflow:auto;
 }
 
 h3 {
@@ -31,6 +21,10 @@ h3 {
 	margin: 0 20px;	
 	background-color: white;
 	text-align: center;
+}
+
+.day:hover {
+	background-color: #FEF8A0;
 }
 .number {
 	font-size: 25px;
@@ -51,6 +45,27 @@ h3 {
 .quantity {
 	float: right;
 	padding-right: 5px;
+	font-weight: bold;
+	color:black;
+}
+
+.next_button, .prev_button {
+	background-color:  #DC4C18;
+	opacity: 0.4;
+	border-radius: 10em;
+	color: #fff;
+	cursor: pointer;
+	font-size: 46px;
+	padding: 0 25px;
+	position: absolute;
+	top: 40%;
+	z-index: 10;
+}
+.next_button {
+	right: 20px;
+}
+.prev_button {
+	left: 20px;
 }
 
 

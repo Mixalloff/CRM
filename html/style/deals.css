@@ -3,6 +3,7 @@
 	background-color: white;
 	height:108px;
 	margin-bottom: 5px;
+	margin-right: 10px;
 	text-align: left;
 	padding-left: 10px;
 }
@@ -11,6 +12,88 @@
 	overflow: auto;
 	height: 448px;
 }
+
+.deals {
+	background-color: #D6D6D6;
+	min-height:500px;
+	padding:0;
+}
+.deals .deals-header-text{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.deals ul {
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.deals li.item-head {
+	font-size: 17px;
+	list-style-type: none;
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 8px 0;
+}
+
+.deals li.item-head:hover {
+	cursor: pointer;
+	background-color: #C0C0C0;
+}
+.deals li.item-head:last-child {
+	border-bottom: 1px solid black;
+}
+
+.filter {
+	min-height:250;
+	background-color: #C0C0C0;
+	margin: 0 5px;
+}
+
+.filter .filter-header-text {
+	font-size: 15px;
+	text-align: center;
+}
+
+.filter .filter-item {
+	font-size: 12px;
+	display: block;
+	margin-left: 5px;
+}
+.filter .filter-item div {
+	margin-top:5px;
+	display: none;
+}
+
+.filter .fa {
+	display: inline-block;
+	font-size: 16px ;
+}
+
+.deal-steps {
+	margin-top:10px;
+}
+
+.search-box input[type='search'] {
+	width:93%;
+	display: inline-block;
+	border:none;
+	outline: none;
+
+}
+
+::-webkit-input-placeholder {font-style:italic;}
+::-moz-placeholder          {font-style:italic;}/* Firefox 19+ */
+:-moz-placeholder           {font-style:italic;}/* Firefox 18- */
+:-ms-input-placeholder      {font-style:italic;}
+
+.search-box {
+	border:1px solid black;
+	border-radius: 10px;
+	margin-top: 10px;
+		margin-bottom: 10px;
+}
+
 .deal .companyname,.dealname,.nextaction,.dealdate,.dealstatus {
 	margin-bottom: 0;
 }
@@ -30,4 +113,30 @@
 	font-size: 30px;
 	margin-right: 10px;
 	margin-top:5px;
+}
+
+
+.steps {
+	border: 1px solid black;
+	height:138px;
+	margin-top:10px;
+	padding: 15px 0px;
+	margin: 0 15px;
+}
+
+#deal-steps {
+border:1px dotted black;
+height: 108px;
+}
+.deal-buttons {
+	margin-bottom: 10px
+}
+
+
+.left-step,.right-step{
+	font-size: 35px;
+	margin-top: 20px;
+}
+.right-step::before {
+	float:right;
 }

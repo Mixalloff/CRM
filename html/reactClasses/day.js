@@ -1,15 +1,22 @@
 var Day = React.createClass({
 
+	getInitialState: function() {
+		return({
+		number: 1,
+		month:"Июль",
+		quantity_rings: 2,
+		quantity_meetings: 10
+	})
+	},
+
 	render: function() {
 		return(
-			<div className="col-md-3">
 			<div className="day">
-			<p className="number">{this.props.number}</p>
-			<p className="month">{this.props.month}</p>
+			<p className="number">{this.state.number}</p>
+			<p className="month">{this.state.month}</p>
 			<div className="meeting_info">
-			<p className="ring"> Звонок клиенту <span className="quantity">{this.props.quantity_rings}</span></p>  
-			<p className="meet"> Встреча <span className="quantity">{this.props.quantity_meetings}</span></p>
-			</div>
+			<p className="ring"> Звонок клиенту <span className="quantity">{this.state.quantity_rings}</span></p>  
+			<p className="meet"> Встреча <span className="quantity">{this.state.quantity_meetings}</span></p>
 			</div>
 			</div>
 			)
@@ -17,43 +24,46 @@ var Day = React.createClass({
 });	
 
 var Calendar = React.createClass({
-	getInitialState: function() {
-		return({days: [] });
-	},
-	updateCalendar: function() {
-		$.ajax ({
-			type: "GET",
-			url: this.props.source,
-			dataType: 'json',
-			cache: false,
-			success: function(response) {
-				console.log(this.state.days);
-				this.replaceState({
-					days: response
-				});
-				this.updateCalendar();
-			}.bind(this),
-			error: function() {
-				this.updateCalendar();
-			}.bind(this)
 
-		});
-	},
-	componentDidMount: function() {
-		this.updateCalendar();
-	},
 	render: function () {		
 		return (
-			<div>
-			{this.state.days.map(function(day,i)
-				{
-					return(
-						<Day key={i} number={day.number} month = {day.month} quantity_rings={day.quantity_rings} quantity_meetings={day.quantity_meetings}/>
-						);
-				})}
-			</div>
+				<div>
+				<div className="next_button"><i className="fa fa-angle-right"></i></div>
+				<div className="prev_button"><i className="fa fa-angle-left"></i></div>
+				<div className="carousel" data-count="4">	
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				<Day/>
+				</div>
+				</div>
 			);	
 	}
 });
 
-React.render(<Calendar source = "http://crmapi-tommsawyer.rhcloud.com/longpolling" />, document.getElementById('calendars'));
+React.render(<Calendar />, document.getElementById('calendars'));

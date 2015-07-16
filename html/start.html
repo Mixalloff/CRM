@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/> 
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/authorize.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header">
+				<div class="col-md-1 logo">
+					<a href="start.html"> <img src="images/logo.png" height="70" width="70" alt="logo"></a>
+				</div>
+
+				<div class="col-md-6 project-name">
+					<p>IT Business Assistant</p>
+					<span>Надежный информационный партнер вашего бизнеса</span>
+				</div>
+				<div class=" col-md-2 col-md-offset-3 navigation">
+					<div class="nav-block">
+						<div class="text-nav">
+						Навигация
+						</div>
+						<a class="nav-logo" href="start.html"> <img src="images/navig.png" height="70" width="70" alt="logo"></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="signin">
+					Войдите или зарегистрируйтесь
+					<div class="enter-form">
+						<div class="controls">
+							<input type="text" class="form-control" placeholder="Логин организации">
+							<input type="password" class="form-control" placeholder="Пароль">
+							<button class="btn btn-primary form-control" >Войти</button>
+							<button data-toggle="modal" type="button" class="btn btn-success form-control" data-target="#register-window" >Регистрация</button>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="col-md-8">
+				<div class="info">
+					Ознакомьтесь с нашим продуктом
+					<div class="row">
+						<div class="col-md-12 tiles">
+							<div class="col-md-4">
+								<div class="tile"><div>Регистрация</div></div> 
+							</div>
+							<div class="col-md-4">
+								<div class="tile"><div>О проекте</div></div> 
+							</div>
+							<div class="col-md-4">
+								<div class="tile"><div>Сервисы</div></div>
+							</div>
+							<div class="col-md-4">
+								<div class="tile"><div>Возможности</div></div> 
+							</div>
+							<div class="col-md-4">
+								<div class="tile"><div>Тарифы</div></div> 
+							</div>
+							<div class="col-md-4">
+								<div class="tile"><div>Контакты</div></div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer">
+					<p></p>14 дней использования абсолютно бесплатно
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="register-window">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">&times;</button>
+					<h4>Регистрация компании</h4>
+				</div>
+				<div class="modal-header">
+					<div class="fluid-container">
+						<div class="row">
+							<form action="" type="post" class="col-md-12">
+								<input type="text" class="form-control" id="org_name" placeholder="Название организации" >
+								<input type="text" class=" form-control" id="login" placeholder="Логин">
+								<input type="password" class="form-control" id="password" placeholder="Пароль"> 
+								<input type="text" class="form-control" id="fio" placeholder="ФИО">
+								<input type="email" class="form-control" id="email" placeholder="Email">
+								<div class="col-md-11 subdivision ">
+									<select id="subdivision" class="form-control"> 
+										<option> Администрация </option>
+									</select> 
+								</div>
+								<button class="btn btn-primary col-md-1">+</button>
+								<input type="submit" class="col-md-12 btn btn-primary" value="Регистрация">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js" ></script> 
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"> </script>
+</body>
+</html>

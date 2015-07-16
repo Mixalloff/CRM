@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>CRM</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/> 
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="style/menu.css"/> 
+	<link rel="stylesheet" href="style/body.css"/>
+	<link rel="stylesheet" href="style/deals.css"/>
+	<script src="http://fb.me/react-0.12.2.js"></script>
+	<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="header">
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="deals col-md-2">
+				<h4>
+					<div class="deals-header-text">Сделки</div>
+				</h4>
+				<ul>
+					<li class="item-head">В процессе</li>
+					<li class="item-head">Успешные</li>
+					<li class="item-head">Неудачные</li>
+					<li class="item-head">Без задач</li>
+				</ul>
+				<div class="filter">
+					<div class="filter-header-text">Фильтр по сделкам</div>
+					<ul>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Период
+							<div class="period">
+								от <input type="datetime-local"/>
+								до <input type="datetime-local"/>
+							</div>
+						</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Этапы сделки
+							<div class="stages">
+								<input type="checkbox" name="option1" value="a1" checked>Этап сделки 1
+								<i class="fa fa-square" style="color:blue"></i>
+								<Br/>
+								<input type="checkbox" name="option2" value="a2">Этап сделки 2
+								<i class="fa fa-square" style="color:yellow"></i>
+								<Br/>
+								<input type="checkbox" name="option3" value="a3">Этап сделки 3
+								<i class="fa fa-square" style="color:green"></i>
+							</div>
+						</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Менеджер</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Сумма</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Действие</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Оценка</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="col-md-10 deal-steps">
+
+				<div class="row">
+					<div class="btn-group col-md-2">
+						<button type="button" class="btn btn-primary">Все</button>
+						<button type="button" class="btn btn-primary">Мои</button>
+					</div>
+					<div class="search-box col-md-6">
+						<i class="fa fa-search"></i>
+						<input type="search" placeholder="Поле для поиска"/>
+						<i class="fa fa-times"></i>
+					</div>
+				</div>
+				<div class="row deal-buttons">
+					<div class="btn-group col-md-3 col-md-offset-4">
+						<button type="button" class="btn btn-primary">Воронка</button>
+						<button type="button" class="btn btn-primary">Список</button>			
+					</div>
+				</div>
+				<div class="row steps">
+					
+						<i class="left-step col-md-1 fa fa-arrow-circle-left"></i>
+
+					<div class="col-md-10" id="deal-steps">
+					
+					</div>
+	
+						<i class="right-step col-md-1 fa fa-arrow-circle-right"></i>
+
+				</div>
+			</div>	
+		</div>
+
+	</div>
+	<script src="jQuery/jquery-1.11.1.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"> </script>
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<script src="jQuery/myScript.js"></script>
+	<script src = "reactClasses/navbar_compiled.js"> </script>
+	<script src = "reactClasses/deal_compiled.js"> </script>
+</body>
+</html>

@@ -12,7 +12,7 @@ getInitialState: function() {
 
 	render:function() {
 	return(
-	<div className="deal">
+	<div className="deal ">
 			<p className = "companyname"> {this.state.companyname} </p>
 			<p className="dealname">{this.state.dealname}</p>
 			<p className="nextaction"> Следующее действие: {this.state.nextaction} </p>
@@ -25,7 +25,8 @@ getInitialState: function() {
 var Deals = React.createClass({
 	render: function () {
 		return (
-				<div>
+			<div>
+				<div className="carousel" data-count ="4">
 					<Deal />
 					<Deal />
 					<Deal />
@@ -33,9 +34,11 @@ var Deals = React.createClass({
 					<Deal />
 					<Deal />
 					<Deal />
+					</div>
 				</div>
 			)
 	}
 });
-
-React.render(<Deals />, document.getElementById('deals'));
+React.render(<Deals/>,document.getElementById("deal-steps"),function() {
+	React.render(<Deals/>,document.getElementById("deals"));
+});
