@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="style/menu.css"/> 
 	<link rel="stylesheet" href="style/body.css"/>
 	<link rel="stylesheet" href="style/deals.css"/>
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
 	<script src="http://fb.me/react-0.12.2.js"></script>
 	<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -38,8 +39,8 @@
 					<ul>
 						<li class="filter-item"><i class="fa fa-caret-right"></i> Период
 							<div class="period">
-								от <input type="datetime-local"/>
-								до <input type="datetime-local"/>
+								 от <input type="text" id="from"/><br>
+								до <input type="text" id="till"/>
 							</div>
 						</li>
 						<li class="filter-item"><i class="fa fa-caret-right"></i> Этапы сделки
@@ -103,5 +104,6 @@
 	<script src="jQuery/myScript.js"></script>
 	<script src = "reactClasses/navbar_compiled.js"> </script>
 	<script src = "reactClasses/deal_compiled.js"> </script>
+	<script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	$(".profile-border").click(function() {
+		if ($(this).next().css("display")=="none")
+		{
+			$(this).next().css("display","block");
+		}
+		else 
+		{
+			$(this).next().css("display","none");
+		}
+	});
 
 		$(".filter-item i").click(function() {
 		var el = $(this);
@@ -31,6 +41,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
+
 	$(".right-step").click(function() {
 		owl.trigger("owl.next");
 	});
@@ -52,5 +63,6 @@ $(document).ready(function() {
 		$(this).children("a:first").css({"color":"white","textDecoration":"none"}).children("i:first").css("color","white");
 	});
 
+$("#from,#till").datepicker();
 	
 });
