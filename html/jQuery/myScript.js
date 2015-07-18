@@ -2,6 +2,7 @@ $(document).ready(function() {
 	$(".profile-border").click(function() {
 		if ($(this).next().css("display")=="none")
 		{
+			$(".pass").css("display","none");
 			$(this).next().css("display","block");
 		}
 		else 

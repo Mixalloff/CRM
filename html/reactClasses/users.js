@@ -28,16 +28,12 @@ var User = React.createClass({
 	}
 });
 var Users = React.createClass({
-	getInitialState: function() {
-		return({
-			department: "Администрация"
-		})
-	},
+
 	render: function() {
 		return(
-			<div>
+			<div className="col-md-offset-1 col-md-10 department" >
 			<div className="name-department">
-			{this.state.department}
+			{this.props.dep}
 			</div>
 
 			<div className="profiles">
@@ -51,4 +47,18 @@ var Users = React.createClass({
 			);
 	}
 });
-React.render(<Users/>, document.getElementById('user-groups'));
+
+
+var GroupsUsers = React.createClass({
+	render: function() {
+		return(
+	<div>	
+			<Users dep="Администрация"/>
+			<Users dep="Отдел продаж"/>
+			<Users dep="Отдел маркетинга"/>	
+			<Users dep="Отдел разработки"/>	
+	</div>	
+			);
+	}
+});
+React.render(<GroupsUsers/>, document.getElementById('groups-users'));
