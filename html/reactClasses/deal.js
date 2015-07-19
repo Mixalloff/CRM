@@ -12,6 +12,7 @@ getInitialState: function() {
 
 	render:function() {
 	return(
+	
 	<div className="deal ">
 			<p className = "companyname"> {this.state.companyname} </p>
 			<p className="dealname">{this.state.dealname}</p>

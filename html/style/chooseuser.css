@@ -14,31 +14,64 @@ body {
 	height:100%;
 	background-color: rgba(0,0,0,0.5);
 }
-.department {
+.owl-wrapper-outer {
+		height:260px !important;
+}
+.department,.left-bar,.right-bar{
 	background-color: rgba(33,25,62,0.9);
 	height:230px;
 	margin-bottom: 20px;
+	display: inline-block;
+}
+.left, .right {
+	padding: 0;
+}
+.left-bar,.right-bar {
+	background-color: #9F612C;;
+	width:40px;
+	position: relative;
+}
+.left-bar {
+	float: right;
+}
+.left-bar:hover, .right-bar:hover {
+	background-color: #D68227;
+	cursor: pointer;
 }
 
+.left-bar  i, .right-bar  i {
+	font-size:35px;
+}
+.user-icon {
+	margin-left: 5px;
+}
+.left-bar > div, .right-bar > div {
+  width: 30px;
+  height: 30px;
+  margin:auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+}
 .name-department {
 	font-size:20px;
 	margin-bottom: 10px;
 	font-weight: bold;
 }
 .profiles {
-	height: 180px;
+	height: 250px;
 }
 .profile {
 	height: 110px;
 	background-color: #fff;
-	margin:5px 27px;
+	margin:5px 34px;
 	position: absolute;
 	top:10px;
 }
-.profile i{
-	font-size:110px;
-	color:black;
-}
+
 .head-name {
 	font-size: 25px;
 	font-weight: bold;
@@ -78,10 +111,11 @@ body {
 .pass {
 	border: 1px solid black;
 	border-top: 0px;
-	background-color: #fff;
+	background-color: #fff !important;
 	height:35px;
 	padding-top: 5px;
 	display: none;
+	z-index:1000 !important;
 }
 .pass .fa {
 	font-size:20px;
@@ -96,3 +130,12 @@ body {
 	float:left;
 	color:black;
 }
+.quantity-right-users,.quantity-left-users {
+	display: block;
+	text-align: center;
+}
+
+.disabled {
+	color: gray !important;
+}
+

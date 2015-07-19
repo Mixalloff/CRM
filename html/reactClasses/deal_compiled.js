@@ -12,6 +12,7 @@ getInitialState: function() {
 
 	render:function() {
 	return(
+	
 	React.createElement("div", {className: "deal "}, 
 			React.createElement("p", {className: "companyname"}, " ", this.state.companyname, " "), 
 			React.createElement("p", {className: "dealname"}, this.state.dealname), 
