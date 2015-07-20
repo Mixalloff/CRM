@@ -23,7 +23,7 @@ getInitialState: function() {
 	)
 }
 });
-var Deals = React.createClass({displayName: "Deals",
+var Step = React.createClass({displayName: "Step",
 	render: function () {
 		return (
 			React.createElement("div", null, 
@@ -40,6 +40,17 @@ var Deals = React.createClass({displayName: "Deals",
 			)
 	}
 });
-React.render(React.createElement(Deals, null),document.getElementById("deal-steps"),function() {
-	React.render(React.createElement(Deals, null),document.getElementById("deals"));
+
+
+var Steps = React.createClass({displayName: "Steps",
+	render: function() {
+		return (
+			React.createElement("div", null, 
+				React.createElement(Step, null)
+						
+			)
+
+			)
+	}
 });
+React.render(React.createElement(Steps, null),document.getElementById("deal-steps"));

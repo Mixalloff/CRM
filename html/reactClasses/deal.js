@@ -23,7 +23,7 @@ getInitialState: function() {
 	)
 }
 });
-var Deals = React.createClass({
+var Step = React.createClass({
 	render: function () {
 		return (
 			<div>
@@ -40,6 +40,18 @@ var Deals = React.createClass({
 			)
 	}
 });
-React.render(<Deals/>,document.getElementById("deal-steps"),function() {
-	React.render(<Deals/>,document.getElementById("deals"));
+
+
+var Steps = React.createClass({
+	render: function() {
+		return (
+			<div>
+				<Step/>
+						
+			</div>
+
+			)
+	}
 });
+React.render(<Steps/>,document.getElementById("deal-steps"));
+

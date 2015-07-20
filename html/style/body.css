@@ -1,11 +1,15 @@
 	.main {
 	background-color: #EBEBEB;
+
 }
 .mainpart {
 	min-height: 500px;
 	margin-bottom: 20px;
 }
-
+.body {
+	position: relative;
+	top:60px;
+}
 
 #scrollBox {
 	margin-bottom: 20px;

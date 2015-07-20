@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+$("#add-in-menu").click(function() {
+	$(".list").fadeToggle();
+});
 
 		$(".filter-item i").click(function() {
 		var el = $(this);
