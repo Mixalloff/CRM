@@ -15,7 +15,7 @@
 
 .deals {
 	background-color: #D6D6D6;
-	min-height:500px;
+	min-height:620px;
 	padding:0;
 }
 .deals .deals-header-text{
@@ -71,16 +71,20 @@
 }
 
 .deal-steps {
-	margin-top:10px;
+	padding-top:10px;
+	background-color: #ECECEC;
+	min-height: 620px;
 }
-
+.search-box  {
+	background-color: #fff;
+}
 .search-box input[type='search'] {
 	width:93%;
 	display: inline-block;
 	border:none;
 	outline: none;
-
 }
+
 
 ::-webkit-input-placeholder {font-style:italic;}
 ::-moz-placeholder          {font-style:italic;}/* Firefox 19+ */
@@ -119,9 +123,8 @@
 .steps {
 	border: 1px solid black;
 	height:138px;
-	margin-top:10px;
 	padding: 15px 0px;
-	margin: 0 15px;
+	margin: 0 15px 10px 15px;
 }
 
 #deal-steps {

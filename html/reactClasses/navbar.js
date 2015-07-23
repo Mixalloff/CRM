@@ -7,7 +7,7 @@ var Navbar = React.createClass({
 			<li className="desktop col-md-1"><a href="index.html"><i className="fa fa-desktop"></i>
 			Рабочий стол</a></li>
 			<li className="col-md-1"> <a href="deals.html"><i className="fa fa-usd"></i>Сделки</a></li>
-			<li className="col-md-1"> <a href="#contacts"><i className="fa fa-phone"></i>Контакты</a></li>
+			<li className="col-md-1"> <a href="contacts.html"><i className="fa fa-phone"></i>Контакты</a></li>
 			<li className="col-md-1"> <a href="#calendar"><i className="fa fa-calendar"></i>Задачи</a></li>
 			<li className="col-md-1"> <a  href="#analytics"><i className="fa fa-bar-chart"></i>Аналитика</a></li>
 

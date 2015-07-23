@@ -7,7 +7,7 @@ var Navbar = React.createClass({displayName: "Navbar",
 			React.createElement("li", {className: "desktop col-md-1"}, React.createElement("a", {href: "index.html"}, React.createElement("i", {className: "fa fa-desktop"}), 
 			"Рабочий стол")), 
 			React.createElement("li", {className: "col-md-1"}, " ", React.createElement("a", {href: "deals.html"}, React.createElement("i", {className: "fa fa-usd"}), "Сделки")), 
-			React.createElement("li", {className: "col-md-1"}, " ", React.createElement("a", {href: "#contacts"}, React.createElement("i", {className: "fa fa-phone"}), "Контакты")), 
+			React.createElement("li", {className: "col-md-1"}, " ", React.createElement("a", {href: "contacts.html"}, React.createElement("i", {className: "fa fa-phone"}), "Контакты")), 
 			React.createElement("li", {className: "col-md-1"}, " ", React.createElement("a", {href: "#calendar"}, React.createElement("i", {className: "fa fa-calendar"}), "Задачи")), 
 			React.createElement("li", {className: "col-md-1"}, " ", React.createElement("a", {href: "#analytics"}, React.createElement("i", {className: "fa fa-bar-chart"}), "Аналитика")), 
 

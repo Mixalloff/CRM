@@ -15,7 +15,7 @@ body {
 	background-color: rgba(0,0,0,0.5);
 }
 .owl-wrapper-outer {
-		height:260px !important;
+	height:260px !important;
 }
 .department,.left-bar,.right-bar{
 	background-color: rgba(33,25,62,0.9);
@@ -46,15 +46,15 @@ body {
 	margin-left: 5px;
 }
 .left-bar > div, .right-bar > div {
-  width: 30px;
-  height: 30px;
-  margin:auto;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  text-align: center;
+	width: 30px;
+	height: 30px;
+	margin:auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
 }
 .name-department {
 	font-size:20px;

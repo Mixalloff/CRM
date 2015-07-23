@@ -3,7 +3,9 @@ $(document).ready(function() {
 $("#add-in-menu").click(function() {
 	$(".list").fadeToggle();
 });
-
+$(":checkbox[name='selectAllContacts']").click(function() {
+	$(":checkbox[name='contactCheckBox']").prop('checked',this.checked);
+});
 		$(".filter-item i").click(function() {
 		var el = $(this);
 			if (el.attr('class')=="fa fa-caret-right")

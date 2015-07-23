@@ -26,17 +26,22 @@ getInitialState: function() {
 var Step = React.createClass({displayName: "Step",
 	render: function () {
 		return (
-			React.createElement("div", null, 
-				React.createElement("div", {className: "carousel", "data-count": "4"}, 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null), 
-					React.createElement(Deal, null)
-					)
-				)
+			React.createElement("div", {className: "row steps"}, 
+
+			React.createElement("i", {className: "left-step col-md-1 fa fa-arrow-circle-left"}), 
+			React.createElement("div", {className: "col-md-10"}, 
+			React.createElement("div", {className: "carousel", "data-count": "4"}, 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null), 
+			React.createElement(Deal, null)
+			)
+			), 
+				React.createElement("i", {className: "right-step col-md-1 fa fa-arrow-circle-right"})
+			)
 			)
 	}
 });
@@ -46,11 +51,17 @@ var Steps = React.createClass({displayName: "Steps",
 	render: function() {
 		return (
 			React.createElement("div", null, 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
+				React.createElement(Step, null), 
 				React.createElement(Step, null)
-						
 			)
 
 			)
 	}
 });
-React.render(React.createElement(Steps, null),document.getElementById("deal-steps"));
+React.render(React.createElement(Steps, null),document.getElementById("steps"));

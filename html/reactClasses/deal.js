@@ -26,17 +26,22 @@ getInitialState: function() {
 var Step = React.createClass({
 	render: function () {
 		return (
-			<div>
-				<div className="carousel" data-count ="4">
-					<Deal />
-					<Deal />
-					<Deal />
-					<Deal />
-					<Deal />
-					<Deal />
-					<Deal />
-					</div>
-				</div>
+			<div className="row steps">
+
+			<i className="left-step col-md-1 fa fa-arrow-circle-left"></i>
+			<div className="col-md-10">
+			<div className="carousel" data-count ="4">
+			<Deal />
+			<Deal />
+			<Deal />
+			<Deal />
+			<Deal />
+			<Deal />
+			<Deal />
+			</div>
+			</div>
+				<i className="right-step col-md-1 fa fa-arrow-circle-right"></i>
+			</div>
 			)
 	}
 });
@@ -47,11 +52,17 @@ var Steps = React.createClass({
 		return (
 			<div>
 				<Step/>
-						
+				<Step/>
+				<Step/>
+				<Step/>
+				<Step/>
+				<Step/>
+				<Step/>
+				<Step/>
 			</div>
 
 			)
 	}
 });
-React.render(<Steps/>,document.getElementById("deal-steps"));
+React.render(<Steps/>,document.getElementById("steps"));
 
