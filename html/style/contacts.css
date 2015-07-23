@@ -1,0 +1,31 @@
+
+#contacts {
+	 margin:20px;
+}
+
+.contact_edit_buttons {
+	margin:0 15px;
+}
+.contact_edit_buttons button, .contact_transfer_buttons button{
+	margin-right: 15px;
+}
+table {
+    border-spacing:0;
+    width: 100%;
+}
+
+td,th {
+    padding:10px 20px;
+    text-align: center;
+}
+th {
+    border-right: 1px solid #BABABA; 
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+thead th{
+  background-color: #AAAAAA;
+}

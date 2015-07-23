@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>CRM</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/> 
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="style/menu.css"/> 
+	<link rel="stylesheet" href="style/body.css"/>
+	<link rel="stylesheet" href="style/deals.css"/>
+	<link rel="stylesheet" href="style/contacts.css">
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
+	<script src="http://fb.me/react-0.12.2.js"></script>
+	<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="header">
+		</div>
+	</div>
+	<div class="container-fluid body">
+		<div class="row">
+			<div class="deals col-md-2">
+				<h4>
+					<div class="deals-header-text">Контакты</div>
+				</h4>
+				<ul>
+					<li class="item-head">Все</li>
+					<li class="item-head">Группы</li>
+					<li class="item-head">Последние</li>
+					<li class="item-head">Удаленные</li>
+				</ul>
+				<div class="filter">
+					<div class="filter-header-text">Фильтр по контактам</div>
+					<ul>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Период
+							<div class="period">
+								 от <input type="text" id="from"/><br>
+								до <input type="text" id="till"/>
+							</div>
+						</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Добавлен
+						</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Компании</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Сделки</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Действия</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Оценка</li>
+						<li class="filter-item"><i class="fa fa-caret-right"></i> Тэги</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="col-md-10 deal-steps">
+
+				<div class="row">
+					<div class="btn-group col-md-2">
+						<button type="button" class="btn btn-primary">Все</button>
+						<button type="button" class="btn btn-primary">Мои</button>
+					</div>
+					<div class="search-box col-md-6">
+						<i class="fa fa-search"></i>
+						<input type="search" placeholder="Поле для поиска"/>
+						<i class="fa fa-times"></i>
+					</div>
+				</div>
+				<div class="row">
+				<div class="contacts_manage_buttons">
+				<div class="contact_edit_buttons">
+					<button type="button" class="col-md-1 btn btn-success ">Добавить </button>
+						<button type="button" class="col-md-1 btn btn-danger ">Удалить </button>
+							<button type="button" class="  col-md-2   btn btn-primary ">Добавить в группу </button>
+							</div>
+							<div class="contact_transfer_buttons">
+								<button type="button" class="col-md-1 col-md-offset-5  btn btn-primary ">Импорт</button>
+									<button type="button" class="col-md-1 btn btn-primary ">Экспорт</button>
+									</div>
+				</div>
+				</div>
+				<div class="row">
+					<div id="contacts">
+						
+
+
+					</div>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+	<script src="jQuery/jquery-1.11.1.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"> </script>
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<script src="jQuery/myScript.js"></script>
+	<script src="reactClasses/contacts_compiled.js"></script>
+	<script src = "reactClasses/navbar_compiled.js"> </script>
+	<script src = "reactClasses/deal_compiled.js"> </script>
+	<script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+</body>
+</html>
