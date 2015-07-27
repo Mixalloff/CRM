@@ -9,6 +9,10 @@
 .contact_edit_buttons button, .contact_transfer_buttons button{
 	margin-right: 15px;
 }
+.item-head a {
+    text-decoration: none;
+    color:#000;
+}
 table {
     border-spacing:0;
     width: 100%;
@@ -28,4 +32,29 @@ tr:nth-child(odd) {
 
 thead th{
   background-color: #AAAAAA;
+}
+
+#companies {
+    margin-top: 30px;
+}
+.company {
+    margin:10px 15px;
+    border: 1px solid black;
+    height: 150px;
+}
+.company-header {
+    font-size:18px;
+    text-align: left;
+    margin: 5px 10px;
+    border-bottom: 1px solid #AAAAAA;
+}
+.company-header .fa {
+    float: right;
+    font-size:18px;
+}
+.company-body {
+    line-height: 0.9;
+    margin-left: 5px;
+    margin-top: 15px;
+    overflow: auto;
 }
