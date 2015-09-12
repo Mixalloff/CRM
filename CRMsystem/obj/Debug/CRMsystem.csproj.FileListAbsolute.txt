@@ -1,0 +1,145 @@
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\csc.exe
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\System.Collections.Immutable.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\System.Reflection.Metadata.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\vbc.exe
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\VBCSCompiler.exe
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\roslyn\VBCSCompiler.exe.config
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\CRMsystem.dll.config
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\CRMsystem.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\CRMsystem.pdb
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Antlr3.Runtime.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\EntityFramework.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\EntityFramework.SqlServer.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Core.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Cookies.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Facebook.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Google.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.OAuth.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Twitter.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Web.Infrastructure.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Newtonsoft.Json.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Owin.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Helpers.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Mvc.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Optimization.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Razor.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.Deployment.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.Razor.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\WebGrease.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Helpers.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Mvc.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Optimization.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.Razor.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.Deployment.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\System.Web.WebPages.Razor.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Antlr3.Runtime.pdb
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Newtonsoft.Json.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\EntityFramework.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\EntityFramework.SqlServer.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Core.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Facebook.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Cookies.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.OAuth.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Google.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Twitter.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.csprojResolveAssemblyReference.cache
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.dll
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.pdb
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.Migrations.InitialCreate.resources
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.csproj.GenerateResource.Cache
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.Migrations.DataMigration.resources
+c:\documents\visual studio 2015\Projects\CRMsystem\CRMsystem\obj\Debug\CRMsystem.Migrations.DataMigration1.resources
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\csc.exe
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\System.Collections.Immutable.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\System.Reflection.Metadata.dll
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\vbc.exe
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\VBCSCompiler.exe
+F:\CRM\CRMsystem\CRMsystem\bin\roslyn\VBCSCompiler.exe.config
+F:\CRM\CRMsystem\CRMsystem\bin\CRMsystem.dll.config
+F:\CRM\CRMsystem\CRMsystem\bin\CRMsystem.dll
+F:\CRM\CRMsystem\CRMsystem\bin\CRMsystem.pdb
+F:\CRM\CRMsystem\CRMsystem\bin\Antlr3.Runtime.dll
+F:\CRM\CRMsystem\CRMsystem\bin\EntityFramework.dll
+F:\CRM\CRMsystem\CRMsystem\bin\EntityFramework.SqlServer.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Core.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Cookies.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Facebook.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Google.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.OAuth.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Twitter.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Web.Infrastructure.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Newtonsoft.Json.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Owin.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Helpers.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Mvc.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Optimization.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Razor.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.Deployment.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.dll
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.Razor.dll
+F:\CRM\CRMsystem\CRMsystem\bin\WebGrease.dll
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Helpers.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Mvc.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Optimization.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.Razor.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.Deployment.xml
+F:\CRM\CRMsystem\CRMsystem\bin\System.Web.WebPages.Razor.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Antlr3.Runtime.pdb
+F:\CRM\CRMsystem\CRMsystem\bin\Newtonsoft.Json.xml
+F:\CRM\CRMsystem\CRMsystem\bin\EntityFramework.xml
+F:\CRM\CRMsystem\CRMsystem\bin\EntityFramework.SqlServer.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Core.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Facebook.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Cookies.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.OAuth.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Google.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.Twitter.xml
+F:\CRM\CRMsystem\CRMsystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.csprojResolveAssemblyReference.cache
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.dll
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.pdb
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.Migrations.igr.resources
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.csproj.GenerateResource.Cache
+F:\CRM\CRMsystem\CRMsystem\obj\Debug\CRMsystem.Migrations.igr1.resources
