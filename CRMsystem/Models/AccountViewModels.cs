@@ -69,6 +69,9 @@ namespace CRMsystem.Models
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }
 
+        [Display(Name = "Название компании")]
+        public string CompanyName { get; set; }
+
         [Required]
         [StringLength(100, ErrorMessage = "Значение {0} должно содержать не менее {2} символов.", MinimumLength = 6)]
         [DataType(DataType.Password)]

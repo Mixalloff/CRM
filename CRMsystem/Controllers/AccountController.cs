@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CRMsystem.Models;
+using CRMsystem.Models.Company_entities;
 
 namespace CRMsystem.Controllers
 {
@@ -153,6 +154,11 @@ namespace CRMsystem.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+
+                var CompanyDb = new CompanyDbContext(model.CompanyName);
+                CompanyDb.Employees.Add(new Employee() { Name = "user", Login = "user1", Password = "123" });
+                CompanyDb.SaveChanges();
+
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
