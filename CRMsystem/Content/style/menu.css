@@ -1,0 +1,120 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.desktop, .avatar {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#menu {
+	padding-bottom: 5px;
+}
+#menu .fa {
+	font-size:35px;
+	display: block;
+	margin: 10px 0 0 0;
+	color: black;
+	text-decoration: none;
+	opacity: 1;
+}
+
+ .fa:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.fa-plus-circle, a[href="#add"]{
+	color:#5C8546 !important;
+}
+nav {
+	height:65px;
+	position: fixed;
+	left:0;
+	right:0;
+	z-index:10;
+	margin-bottom: 60px;
+}
+nav ul {
+ background-color : #DC4C18;
+ margin-bottom: 0;
+ height:60px;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav a {
+	display: block;
+	color:black;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+nav a:hover {
+	text-decoration: none;
+	color:black;
+}
+
+
+#menu img {
+	width:55px;
+	margin: 2px 0 0 0;
+	height:55px;
+}
+.post {
+	font-size:10px;
+}
+
+.info {
+	display: inline-block;
+	margin-left:10px;
+}
+.info i {
+	color:yellow !important;
+	display: inline-block !important;
+	font-size: 15px !important ;
+}
+.avatar img {
+	vertical-align: top !important;
+}
+.clock-number, .message-number {
+	color:yellow;
+}
+.clock-number {
+	margin-right: 5px;
+}
+
+.list {
+    width:155px;
+    height:110px ;
+    background-color: #BDBDBD;
+    cursor:pointer ;
+    z-index:100;
+    padding: 5px 5px;
+    display: none;
+    position: absolute;
+    top:60px;
+    left:835px;
+}
+.list .add-menu {
+	padding: 0 20px;
+}
+.list .add-menu li div {
+    display: inline-block ;
+    width:20px ;
+    height:20px ;
+}
+.list .add-menu li {
+    list-style-type:none; 
+    line-height:1.4;
+}
+.list .add-menu li:hover {
+    font-weight:bold;
+}
+.list .add-menu li i {
+    color: #4C7A34;
+}

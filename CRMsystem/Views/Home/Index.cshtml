@@ -1,31 +1,113 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@section Indexstyle {
+<link rel="stylesheet" href="~/Content/style/main.css">
+<link rel="stylesheet" href="~/Content/style/authorize.css">
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="header">
+            <div class="col-md-1 logo">
+                <a href="start.html"> <img src="~/images/logo.png" height="70" width="70" alt="logo"></a>
+            </div>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+            <div class="col-md-6 project-name">
+                <p>IT Business Assistant</p>
+                <span>Надежный информационный партнер вашего бизнеса</span>
+            </div>
+            <div class=" col-md-2 col-md-offset-3 navigation">
+                <div class="nav-block">
+                    <div class="text-nav">
+                        Навигация
+                    </div>
+                    <a class="nav-logo" href="start.html"> <img src="~/images/navig.png" height="70" width="70" alt="logo"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="signin">
+                Войдите или зарегистрируйтесь
+                <div class="enter-form">
+                    <div class="controls">
+                        <input type="text" class="form-control" placeholder="Логин организации">
+                        <input type="password" class="form-control" placeholder="Пароль">
+                        <button class="btn btn-primary form-control">Войти</button>
+                        <button data-toggle="modal" type="button" class="btn btn-success form-control" data-target="#register-window">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="info">
+                Ознакомьтесь с нашим продуктом
+                <div class="row">
+                    <div class="col-md-12 tiles">
+                        <div class="col-md-4">
+                            <div class="tile"><div>Регистрация</div></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile"><div>О проекте</div></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile"><div>Сервисы</div></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile"><div>Возможности</div></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile"><div>Тарифы</div></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile"><div>Контакты</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer">
+                <p></p>14 дней использования абсолютно бесплатно
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="modal fade" id="register-window">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                <h4>Регистрация компании</h4>
+            </div>
+            <div class="modal-header">
+                <div class="fluid-container">
+                    <div class="row">
+                        <form action="" type="post" class="col-md-12">
+                            <input type="text" class="form-control" id="org_name" placeholder="Название организации">
+                            <input type="text" class=" form-control" id="login" placeholder="Логин">
+                            <input type="password" class="form-control" id="password" placeholder="Пароль">
+                            <input type="text" class="form-control" id="fio" placeholder="ФИО">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <div class="col-md-11 subdivision ">
+                                <select id="subdivision" class="form-control">
+                                    <option> Администрация </option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary col-md-1">+</button>
+                            <input type="submit" class="col-md-12 btn btn-primary" value="Регистрация">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+            </div>
+        </div>
     </div>
 </div>
