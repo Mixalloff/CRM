@@ -8,24 +8,11 @@
     <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     @Styles.Render("~/Content/css")
-    @RenderSection("Indexstyle", required: false)
-    @RenderSection("Startstyle", required: false)
-    @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("~/Content/owlcss")
-    @Styles.Render("~/Content/jquery-ui")
-
+    @RenderSection("StyleSection", required: false)
 </head>
 <body>
-
-     @RenderBody()
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/react");
-    @Scripts.Render("~/bundles/owljs")
-    @Scripts.Render("~/bundles/jquery-ui")
-    @Scripts.Render("~/bundles/myscripts")
-
-
+    @RenderBody()
+    @Scripts.Render("~/bundles/plugins")
     @RenderSection("scripts", required: false)
 </body>
 </html>

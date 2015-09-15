@@ -228,7 +228,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\css\font-awesome.css" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\css\font-awesome.min.css" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style\authorize.css" />
@@ -241,43 +243,43 @@
     <Content Include="Content\style\main.css" />
     <Content Include="Content\style\menu.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\font-awesome\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\emptyavatar.jpg" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\nav.png" />
-    <Content Include="images\navig.png" />
-    <Content Include="js\jsProfile.js" />
-    <Content Include="js\myScript.js" />
-    <Content Include="react\companies_compiled.js" />
-    <Content Include="react\contacts_compiled.js" />
-    <Content Include="react\day_compiled.js" />
-    <Content Include="react\deal_compiled.js" />
-    <Content Include="react\event_compiled.js" />
-    <Content Include="react\navbar_compiled.js" />
-    <Content Include="react\users_compiled.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="fonts\font-awesome\fontawesome-webfont.eot" />
-    <Content Include="fonts\font-awesome\fontawesome-webfont.ttf" />
-    <Content Include="fonts\font-awesome\fontawesome-webfont.woff" />
-    <Content Include="fonts\font-awesome\FontAwesome.otf" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\owl.carousel.min.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Content\images\emptyavatar.jpg" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\nav.png" />
+    <Content Include="Content\images\navig.png" />
+    <Content Include="Content\js\jsProfile.js" />
+    <Content Include="Content\js\myScript.js" />
+    <Content Include="Content\react\companies_compiled.js" />
+    <Content Include="Content\react\contacts_compiled.js" />
+    <Content Include="Content\react\day_compiled.js" />
+    <Content Include="Content\react\deal_compiled.js" />
+    <Content Include="Content\react\event_compiled.js" />
+    <Content Include="Content\react\navbar_compiled.js" />
+    <Content Include="Content\react\users_compiled.js" />
+    <Content Include="Content\Scripts\bootstrap.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\font-awesome-4.4.0\fonts\FontAwesome.otf" />
+    <None Include="Content\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Content\Scripts\jquery-1.10.2.js" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
+    <None Include="Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery-ui.min.js" />
+    <Content Include="Content\Scripts\jquery.validate.js" />
+    <Content Include="Content\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Content\Scripts\owl.carousel.min.js" />
+    <Content Include="Content\Scripts\respond.js" />
+    <Content Include="Content\Scripts\respond.min.js" />
+    <Content Include="Content\Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -323,12 +325,12 @@
     <Folder Include="Views\Tasks\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201509120917014_igr.resx">
