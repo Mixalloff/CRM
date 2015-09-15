@@ -318,6 +318,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Resources\Companies\ekvator\" />
     <Folder Include="Views\Analytics\" />
     <Folder Include="Views\Contacts\" />
     <Folder Include="Views\Deals\" />

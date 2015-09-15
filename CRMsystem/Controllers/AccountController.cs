@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CRMsystem.Models;
 using CRMsystem.Models.Company_entities;
+using CRMsystem.CommonClasses;
 
 namespace CRMsystem.Controllers
 {
@@ -152,6 +153,7 @@ namespace CRMsystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                FileWorker.CreateCompanyRepo(model.CompanyName);
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
 

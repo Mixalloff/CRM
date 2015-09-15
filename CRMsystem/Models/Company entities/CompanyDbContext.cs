@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using CRMsystem.CommonClasses;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -29,6 +30,9 @@ namespace CRMsystem.Models.Company_entities
         public CompanyDbContext(string companyName)
             : base(companyName + "_db", throwIfV1Schema: false)
         {
+            Database.Connection.ConnectionString = String.Format(
+                @"Server=(LocalDb)\MSSQLLocalDB;AttachDbFilename={0}\database\{1}.mdf;Initial Catalog={1};Integrated Security=True",
+                FileWorker.GetCompanyCatalogPhysicalPath(companyName), companyName);
         }
 
         public static CompanyDbContext Create(string companyName)
