@@ -12,7 +12,12 @@ namespace CRMsystem.Controllers
         {
             return View();
         }
-        public ActionResult Start()
+   
+        public ActionResult Chooseuser()
+        {
+            return View();
+        }
+        public ActionResult Companies()
         {
             return View();
         }

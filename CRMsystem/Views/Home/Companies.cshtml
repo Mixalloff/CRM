@@ -1,0 +1,69 @@
+﻿@section styles {
+    @Styles.Render("~/Content/companiesStyles")
+}
+
+    <div class="container-fluid">
+    <div class="row" id="header">
+    </div>
+</div>
+<div class="container-fluid body">
+    <div class="row">
+        <div class="deals col-md-2">
+            <h4>
+                <div class="deals-header-text">Контакты</div>
+            </h4>
+            <ul>
+                <li class="item-head"><a href="contacts.html">Все</a></li>
+                <li class="item-head">Группы</li>
+                <li class="item-head">Последние</li>
+                <li class="item-head">Удаленные</li>
+                <li class="item-head"><a href="companies.html">Компании</a></li>
+            </ul>
+            <div class="filter">
+                <div class="filter-header-text">Фильтр</div>
+                <ul>
+                    <li class="filter-item">
+                        <i class="fa fa-caret-right"></i> Добавлен
+                        <div class="period">
+                            от <input type="text" id="from" /><br>
+                            до <input type="text" id="till" />
+                        </div>
+                    </li>
+                    <li class="filter-item"><i class="fa fa-caret-right"></i> Компании</li>
+                    <li class="filter-item"><i class="fa fa-caret-right"></i> Сделки</li>
+                    <li class="filter-item"><i class="fa fa-caret-right"></i> Действия</li>
+                    <li class="filter-item"><i class="fa fa-caret-right"></i> Оценка</li>
+                    <li class="filter-item"><i class="fa fa-caret-right"></i> Тэги</li>
+                    <li><button class="btn-sm btn-primary col-md-offset-3">Применить</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 deal-steps">
+            <div class="row">
+                <div class="btn-group col-md-2">
+                    <button type="button" class="btn btn-primary">Все</button>
+                    <button type="button" class="btn btn-primary">Мои</button>
+                </div>
+                <div class="search-box col-md-6">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Поле для поиска" />
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contacts_manage_buttons">
+                    <div class="contact_edit_buttons">
+                        <button type="button" class="col-md-1 btn btn-success ">Добавить </button>
+                        <button type="button" class="col-md-1 btn btn-danger ">Удалить </button>
+                        <button type="button" class="  col-md-2   btn btn-primary ">Добавить в группу </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="companies">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    @Scripts.Render( "~/Content/companiesScripts")

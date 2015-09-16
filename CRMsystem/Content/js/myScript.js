@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    $('#menu a[href="..' + location.pathname + '"]').addClass('active');
+
 
 $("#add-in-menu").click(function() {
 	$(".list").fadeToggle();
@@ -38,11 +40,7 @@ $(":checkbox[name='selectAllContacts']").click(function() {
 		owl.trigger("owl.prev");
 	});
 	
-	$("#menu li").click(function() {
-		$(this).siblings().find("a").css("color","black");
-		$(this).siblings().find("a i").css("color","black");
-		$(this).children("a:first").css({"color":"white","textDecoration":"none"}).children("i:first").css("color","white");
-	});
+	
 
 $("#from,#till").datepicker();
 	

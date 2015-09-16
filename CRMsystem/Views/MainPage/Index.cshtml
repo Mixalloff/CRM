@@ -1,14 +1,12 @@
 ﻿
 @{
     ViewBag.Title = "ХЗ";
+    
+}
+@section styles {
+@Styles.Render("~/Content/startStyles")
 }
 
-@section StyleSection {
-    <link rel="stylesheet" href="~/Content/style/menu.css"/> 
-	<link rel="stylesheet" href="~/Content/style/body.css" />
-	<link rel="stylesheet" href="~/Content/style/deals.css" />
-	<link rel="stylesheet" href="~/Content/style/events.css" />
-}
 <div class="container-fluid">
     <div class="row" id="header">
 
@@ -36,7 +34,7 @@
 
         <div class="leftbar col-md-3">
             <div class="row deals">
-                <span class="glyphicon glyphicon-cog"> </span>
+                <span class="fa fa-cog"> </span>
                 <h3>Мои сделки</h3>
                 <div class="col-md-12" id="deals">
                 </div>
@@ -45,4 +43,4 @@
     </div>
 </div>
 
-
+@Scripts.Render("~/Content/startScripts")

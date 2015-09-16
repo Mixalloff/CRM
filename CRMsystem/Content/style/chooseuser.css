@@ -3,7 +3,7 @@ body {
 }
 
 .container-fluid {
-	background-image: url(images/background.jpg);
+	background-image: url(../images/background.jpg);
 	background-size: cover;
 	padding:0;
 	height:auto;

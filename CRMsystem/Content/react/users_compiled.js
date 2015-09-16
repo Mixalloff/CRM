@@ -10,7 +10,7 @@ var User = React.createClass({displayName: "User",
 			React.createElement("div", {className: "col-md-12"}, 
 			React.createElement("div", {className: "profile-border"}, 
 			React.createElement("div", {className: "profile"}, 
-			React.createElement("img", {src: "images/emptyavatar.jpg", width: "110px"})
+			React.createElement("img", {src: "../Content/images/emptyavatar.jpg", width: "110px"})
 			), 
 			React.createElement("div", {className: "user-name"}, 
 			this.state.name

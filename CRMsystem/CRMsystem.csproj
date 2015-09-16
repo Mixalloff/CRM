@@ -234,16 +234,13 @@
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style\authorize.css" />
-    <Content Include="Content\style\body.css" />
     <Content Include="Content\style\chooseuser.css" />
     <Content Include="Content\style\contacts.css" />
-    <Content Include="Content\style\deals.css" />
     <Content Include="Content\style\events.css" />
-    <Content Include="Content\style\images\background.jpg" />
+    <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\style\start.css" />
     <Content Include="Content\style\main.css" />
-    <Content Include="Content\style\menu.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\images\emptyavatar.jpg" />
@@ -280,6 +277,9 @@
     <Content Include="Content\Scripts\respond.js" />
     <Content Include="Content\Scripts\respond.min.js" />
     <Content Include="Content\Scripts\_references.js" />
+    <Content Include="Views\Home\Companies.cshtml" />
+    <Content Include="Views\Home\Chooseuser.cshtml" />
+    <None Include="Views\Contacts\Index.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -314,21 +314,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Start.cshtml" />
+    <Content Include="Views\MainPage\Index.cshtml" />
+    <Content Include="Views\Deals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Resources\Companies\ekvator\" />
     <Folder Include="Views\Analytics\" />
-    <Folder Include="Views\Contacts\" />
-    <Folder Include="Views\Deals\" />
-    <Folder Include="Views\MainPage\" />
     <Folder Include="Views\Tasks\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Content\Scripts\jquery-1.10.2.min.map" />

@@ -1,10 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@section StyleSection {
-<link rel="stylesheet" href="~/Content/style/main.css">
-<link rel="stylesheet" href="~/Content/style/authorize.css">
+@section styles {
+@Styles.Render("~/Content/indexStyles")
 }
+
 <div class="container-fluid">
     <div class="row">
         <div class="header">
