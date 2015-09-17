@@ -362,3 +362,4 @@ C:\CRM\CRMsystem\obj\Debug\CRMsystem.Migrations.dm.resources
 C:\CRM\CRMsystem\obj\Debug\CRMsystem.csproj.GenerateResource.Cache
 C:\CRM\CRMsystem\obj\Debug\CRMsystem.dll
 C:\CRM\CRMsystem\obj\Debug\CRMsystem.pdb
+C:\Project\CRM\CRMsystem\obj\Debug\CRMsystem.Migrations.UserChanged.resources

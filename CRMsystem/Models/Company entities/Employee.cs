@@ -21,10 +21,8 @@ namespace CRMsystem.Models.Company_entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EmployeeId { get; set; }
 
-        [Required]
          public string Login { get; set; }
 
-        [Required]
         public string Password { get; set; }
 
         public string Name { get; set; }

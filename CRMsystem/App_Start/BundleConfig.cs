@@ -10,7 +10,8 @@ namespace CRMsystem
         {
             bundles.Add(new ScriptBundle("~/bundles/plugins").Include(
                         "~/Content/Scripts/jquery-{version}.js",
-                        "~/Content/Scripts/bootstrap.js"
+                        "~/Content/Scripts/bootstrap.js",
+                        "~/Content/js/homeScript.js"
                         ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -30,7 +31,6 @@ namespace CRMsystem
                "~/Content/style/main.css",
                "~/Content/style/events.css",
                "~/Content/owl.carousel.css"
-
                ));
             bundles.Add(new ScriptBundle("~/Content/startScripts").Include(
                 "~/Content/react/navbar_compiled.js",

@@ -154,11 +154,12 @@ namespace CRMsystem.Controllers
             if (ModelState.IsValid)
             {
                 FileWorker.CreateCompanyRepo(model.CompanyName);
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.CompanyName, RegisterDate = DateTime.Now, NextPayment = DateTime.Now.AddMonths(1) };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
                 var CompanyDb = new CompanyDbContext(model.CompanyName);
-                CompanyDb.Employees.Add(new Employee() { Name = "user", Login = "user1", Password = "123" });
+                var fio = model.FIO.Split(' ');
+                CompanyDb.Employees.Add(new Employee() { Surname = fio[0], Name = fio[1], Patronymic = fio[2], Login = model.Email, Password = "" });
                 CompanyDb.SaveChanges();
 
                 if (result.Succeeded)

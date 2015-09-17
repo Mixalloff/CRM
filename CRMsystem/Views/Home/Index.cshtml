@@ -89,18 +89,16 @@
                 <div class="fluid-container">
                     <div class="row">
                         <form action="" type="post" class="col-md-12">
+                            @Html.AntiForgeryToken()
                             <input type="text" class="form-control" id="org_name" placeholder="Название организации">
-                            <input type="text" class=" form-control" id="login" placeholder="Логин">
-                            <input type="password" class="form-control" id="password" placeholder="Пароль">
-                            <input type="text" class="form-control" id="fio" placeholder="ФИО">
+                            @*<input type="text" class=" form-control" id="login" placeholder="Логин">*@
+                            <input type="text" class="form-control" id="fio" placeholder="Фамилия Имя Отчество">
                             <input type="email" class="form-control" id="email" placeholder="Email">
-                            <div class="col-md-11 subdivision ">
-                                <select id="subdivision" class="form-control">
-                                    <option> Администрация </option>
-                                </select>
-                            </div>
-                            <button class="btn btn-primary col-md-1">+</button>
-                            <input type="submit" class="col-md-12 btn btn-primary" value="Регистрация">
+                            <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                            <input type="password" class="form-control" id="password" placeholder="Пароль">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Повторите пароль">
+
+                            <div type="submit" class="col-md-12 btn btn-primary register-btn">Регистрация</div>
                         </form>
                     </div>
                 </div>
