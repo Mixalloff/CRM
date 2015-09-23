@@ -10,7 +10,8 @@ namespace CRMsystem
         {
             bundles.Add(new ScriptBundle("~/bundles/plugins").Include(
                         "~/Content/Scripts/jquery-{version}.js",
-                        "~/Content/Scripts/bootstrap.js"
+                        "~/Content/Scripts/bootstrap.js",
+                        "~/Content/js/homeScript.js"
                         ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
