@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRMsystem.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -15,7 +16,7 @@ namespace CRM.Models.Common_entities
         /// <summary>
         /// Компания
         /// </summary>
-        public Company Company { get; set; }
+        public ApplicationUser Company { get; set; }
 
         /// <summary>
         /// Банк

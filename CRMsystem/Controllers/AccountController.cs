@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using CRMsystem.Models;
 using CRMsystem.Models.Company_entities;
 using CRMsystem.CommonClasses;
+using System.Collections.Generic;
 
 namespace CRMsystem.Controllers
 {
@@ -148,17 +149,18 @@ namespace CRMsystem.Controllers
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
-
+        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
                 FileWorker.CreateCompanyRepo(model.CompanyName);
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.CompanyName, RegisterDate = DateTime.Now, NextPayment = DateTime.Now.AddMonths(1) };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
                 var CompanyDb = new CompanyDbContext(model.CompanyName);
-                CompanyDb.Employees.Add(new Employee() { Name = "user", Login = "user1", Password = "123" });
+                var fio = model.FIO.Split(' ');
+                CompanyDb.Employees.Add(new Employee() { Surname = fio[0], Name = fio[1], Patronymic = fio[2], Login = model.Email, Password = "" });
                 CompanyDb.SaveChanges();
 
                 if (result.Succeeded)
@@ -171,15 +173,32 @@ namespace CRMsystem.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Подтверждение учетной записи", "Подтвердите вашу учетную запись, щелкнув <a href=\"" + callbackUrl + "\">здесь</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "MainPage");
                 }
-                AddErrors(result);
-            }
-
-            // Появление этого сообщения означает наличие ошибки; повторное отображение формы
-            return View(model);
+             
+            }         
+            return GetErrors();
         }
 
+        private JsonResult GetErrors()
+        {
+            var errors = new List<string>();
+
+            foreach (var modelState in ModelState.Values)
+            {
+                errors.AddRange(modelState.Errors.Select(error => error.ErrorMessage));
+            }
+            return Json(errors);
+        }
+
+
+        private void AddErrors(IdentityResult result)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error);
+            }
+        }
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
@@ -443,13 +462,7 @@ namespace CRMsystem.Controllers
             }
         }
 
-        private void AddErrors(IdentityResult result)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error);
-            }
-        }
+       
 
         private ActionResult RedirectToLocal(string returnUrl)
         {

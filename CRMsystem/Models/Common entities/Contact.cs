@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRMsystem.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -30,6 +31,6 @@ namespace CRM.Models.Common_entities
         /// </summary>
         public ContactType Type { get; set; }
 
-        public virtual Company Company { get; set; }
+        public virtual ApplicationUser Company { get; set; }
     }
 }

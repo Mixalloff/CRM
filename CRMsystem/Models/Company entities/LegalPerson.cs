@@ -13,7 +13,6 @@ namespace CRMsystem.Models.Company_entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LegalPersonId { get; set; }
 
-        [Required]
         public string Name { get; set; }
 
         /// <summary>

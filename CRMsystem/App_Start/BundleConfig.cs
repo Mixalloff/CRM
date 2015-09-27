@@ -22,8 +22,14 @@ namespace CRMsystem
 
             //для страницы index.cshtml
             bundles.Add(new StyleBundle("~/Content/indexStyles").Include(
-                "~/Content/style/start.css",
-                 "~/Content/style/authorize.css"
+                "~/Content/style/whileFORSTART.css",
+                "~/Content/style/alertify.core.css",
+                 "~/Content/style/alertify.default.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/Content/indexScripts").Include(
+                "~/Content/react/register_form.js",
+                "~/Content/Scripts/alertify.js"
                 ));
 
             //для страницы start.shtml
@@ -31,7 +37,6 @@ namespace CRMsystem
                "~/Content/style/main.css",
                "~/Content/style/events.css",
                "~/Content/owl.carousel.css"
-
                ));
             bundles.Add(new ScriptBundle("~/Content/startScripts").Include(
                 "~/Content/react/navbar_compiled.js",

@@ -13,9 +13,5 @@ namespace CRMsystem.Controllers
         {
             return View();
         }
-        public ActionResult Companies()
-        {
-            return View("Companies");
-        }
     }
 }

@@ -64,24 +64,33 @@ namespace CRMsystem.Models
 
     public class RegisterViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Поле Email должно быть установлено")]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage="Поле Название Организации должно быть установлено")]
         [Display(Name = "Название компании")]
         public string CompanyName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Поле должно быть установлено")]
         [StringLength(100, ErrorMessage = "Значение {0} должно содержать не менее {2} символов.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]
         public string Password { get; set; }
 
+        [Required(ErrorMessage = "Поле должно быть установлено")]
         [DataType(DataType.Password)]
         [Display(Name = "Подтверждение пароля")]
         [Compare("Password", ErrorMessage = "Пароль и его подтверждение не совпадают.")]
         public string ConfirmPassword { get; set; }
+
+        [Display(Name = "ФИО")]
+        public string FIO { get; set; }
+
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Формат телефона не валиден")]
+        public string Phone { get; set; }
+
     }
 
     public class ResetPasswordViewModel

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#menu a[href="..' + location.pathname + '"]').addClass('active');
 
 
