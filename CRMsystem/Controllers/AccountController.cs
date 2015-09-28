@@ -154,11 +154,12 @@ namespace CRMsystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                FileWorker.CreateCompanyRepo(model.CompanyName);
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.CompanyName, RegisterDate = DateTime.Now, NextPayment = DateTime.Now.AddMonths(1) };
+                string org_name = model.CompanyName.Replace(' ', '_');
+                FileWorker.CreateCompanyRepo(org_name);
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = org_name, RegisterDate = DateTime.Now, NextPayment = DateTime.Now.AddMonths(1) };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
-                var CompanyDb = new CompanyDbContext(model.CompanyName);
+                var CompanyDb = new CompanyDbContext(org_name);
                 var fio = model.FIO.Split(' ');
                 CompanyDb.Employees.Add(new Employee() { Surname = fio[0], Name = fio[1], Patronymic = fio[2], Login = model.Email, Password = "" });
                 CompanyDb.SaveChanges();
@@ -173,7 +174,7 @@ namespace CRMsystem.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Подтверждение учетной записи", "Подтвердите вашу учетную запись, щелкнув <a href=\"" + callbackUrl + "\">здесь</a>");
 
-                    return RedirectToAction("Index", "MainPage");
+                    return  Json(Url.Action("Index", "MainPage"));
                 }
              
             }         

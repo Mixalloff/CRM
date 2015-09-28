@@ -6,18 +6,19 @@ var RegisterForm = React.createClass({
             type: "post",
             url: "/Account/Register",
             data: $(".reg_form").serializeArray(),
-            success: function (data) {
-                alertify.error("Ошибки в форме");
-                var s = "";
-                if (data.length > 0) {
-                    for(var i = 0; i < data.length; i++)
-                    {
-                        s += data[i] + '<br\>';
-                    }
-                    alertify.alert(s);
-                }
+            success: function (data) {              
+                if (data.constructor === Array)
+                {
+                    alertify.error("Ошибки в форме");
+                    var s = "";               
+                        for (var i = 0; i < data.length; i++) {
+                            s += data[i] + '<br\>';
+                        }
+                        alertify.alert(s);
+                }           
                 else {
                     alertify.success("Регистрация прошла успешно")
+                    window.location.href = data;
                 }                       
             },
             errors: function (data) {
@@ -26,7 +27,7 @@ var RegisterForm = React.createClass({
         });
         e.preventDefault();
     },
-
+   
     render: function () {
         return (
 
