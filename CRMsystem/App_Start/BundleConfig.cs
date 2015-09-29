@@ -11,12 +11,14 @@ namespace CRMsystem
             bundles.Add(new ScriptBundle("~/bundles/plugins").Include(
                         "~/Content/Scripts/jquery-{version}.js",
                         "~/Content/Scripts/bootstrap.js",
-                        "~/Content/js/homeScript.js"
+                        "~/Content/js/homeScript.js",
+                        "~/Content/js/spinner.js"
                         ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
-                      "~/Content/fonts/font-awesome-4.4.0/css/font-awesome.min.css"
+                      "~/Content/fonts/font-awesome-4.4.0/css/font-awesome.min.css",
+                      "~/Content/style/spinner.css"
                       ));
 
 

@@ -232,6 +232,7 @@
     <Content Include="Content\fonts\font-awesome-4.4.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\js\homeScript.js" />
+    <Content Include="Content\js\spinner.js" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\react\register_form.js" />
     <Content Include="Content\Scripts\alertify.js" />
@@ -242,6 +243,7 @@
     <Content Include="Content\style\contacts.css" />
     <Content Include="Content\style\events.css" />
     <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\style\spinner.css" />
     <Content Include="Content\style\start.css" />
     <Content Include="Content\style\main.css" />
     <Content Include="Content\style\whileFORSTART.css" />

@@ -2,11 +2,13 @@ var RegisterForm = React.createClass({
     displayName: "RegisterForm",
 
     handleLogin: function (e) {
+        spinnerStart($(".reg_form"));
         $.ajax({
             type: "post",
             url: "/Account/Register",
             data: $(".reg_form").serializeArray(),
-            success: function (data) {              
+            success: function (data) {
+                spinnerFinish();
                 if (data.constructor === Array)
                 {
                     alertify.error("Ошибки в форме");
@@ -17,12 +19,13 @@ var RegisterForm = React.createClass({
                         alertify.alert(s);
                 }           
                 else {
-                    alertify.success("Регистрация прошла успешно")
                     window.location.href = data;
+                    alertify.success("Регистрация прошла успешно");         
                 }                       
             },
             errors: function (data) {
-                alertify.error('Ошибка на сервере')
+                spinnerFinish();
+                alertify.error('Ошибка на сервере');
             }
         });
         e.preventDefault();
